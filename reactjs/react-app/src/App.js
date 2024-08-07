@@ -1,7 +1,24 @@
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { fetchData } from './utils/fetchData.js';
 
 function App() {
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try{
+        const fetchedData = await fetchData('https://oscarcordero24.github.io/DnD/data/143046_Complete.json');
+        setData(fetchedData);
+      } catch(error){
+        console.error("There was an error: ", error);
+      }
+    }
+    loadData();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
