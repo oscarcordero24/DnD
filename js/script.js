@@ -14,6 +14,5 @@ function main(data){
     const races = data.compendium.race;
     const spells = data.compendium.spell;
 
-    console.log(races);
 }
 

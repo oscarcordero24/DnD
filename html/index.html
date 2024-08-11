@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
+    <div class="container">
+        <h1>Whatever Title</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search">
+            <ul>
+                <li>Item #1</li>
+                <li>Item #2</li>
+                <li>Item #3</li>
+                <li>Item #4</li>
+                <li>Item #5</li>
+            </ul>
+        </div>
+        <select id="category"></select>
+        <select id="items"></select>
+        <div class="results">
+            <p id="item-results"></p>
+        </div>
+    </div>
     
     <script type="module" src="../js/script.js"></script>
     <script type="module" src="../js/functions.js"></script>
+    <script type="module" src="../js/dropbox.js"></script>
 </body>
 </html>
