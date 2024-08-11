@@ -1,0 +1,138 @@
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 12px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #424242;
+}
+
+.container{
+    width: 40rem;
+    height: 60rem;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 4rem 4rem 4rem 1fr;
+    grid-template-areas: 
+    "title"
+    "search"
+    "category"
+    "items"
+    "results";
+    background: #fff;
+}
+
+h1{
+    grid-area: title;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.search-bar{
+    grid-area: search;
+    position: relative;
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    margin: auto;
+    border: 1px solid rgb(102, 102, 102);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input{
+    width: 22rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.search-bar.active{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-bar.active::before{
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 1px;
+    background: rgb(102, 102, 102);
+    bottom: 0;
+    z-index: 1;
+}
+
+.search-bar ul{
+    position: absolute;
+    opacity: 0;
+    user-select: none;
+}
+
+.search-bar.active ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    border: 1px solid rgb(102, 102, 102);
+    background: #fff;
+    border-top: none;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    top: 1.4rem;
+    opacity: 1;
+}
+
+.search-bar ul li{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+}
+
+.search-bar ul li:hover{
+    background: rgb(102, 102, 102);
+    color: #fff;
+}
+
+#category,
+#items{
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#category{
+    grid-area: category;
+}
+
+#items{
+    grid-area: items;
+}
+
+.results{
+    grid-area: results;
+    margin: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
