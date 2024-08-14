@@ -1,0 +1,356 @@
+{
+  "class_name": "Warlock",
+  "hit_die": "1d8",
+  "hit_points_at_1st_level": "8 + Constitution modifier",
+  "hit_points_at_higher_levels": "1d8 (or 5) + Constitution modifier per level after 1st",
+  "proficiencies": {
+    "armor": ["Light armor"],
+    "weapons": ["Simple weapons"],
+    "tools": [],
+    "saving_throws": ["Wisdom", "Charisma"],
+    "skills": ["Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, Religion"]
+  },
+  "class_features": [
+    {
+      "level": 1,
+      "feature_name": "Otherworldly Patron",
+      "description": "Choose a patron that grants you magical powers. Additional features are granted at 6th, 10th, and 14th levels.",
+      "options": ["The Archfey", "The Fiend", "The Great Old One"]
+    },
+    {
+      "level": 1,
+      "feature_name": "Pact Magic",
+      "description": "Warlocks have a unique spellcasting ability. They have limited spell slots that are regained on a short rest."
+    },
+    {
+      "level": 2,
+      "feature_name": "Eldritch Invocations",
+      "description": "Learn Eldritch Invocations, which are special abilities that provide various benefits."
+    },
+    {
+      "level": 3,
+      "feature_name": "Pact Boon",
+      "description": "Choose a Pact Boon that grants you a magical gift from your patron.",
+      "options": ["Pact of the Chain", "Pact of the Blade", "Pact of the Tome"]
+    },
+    {
+      "level": 11,
+      "feature_name": "Mystic Arcanum",
+      "description": "Gain a warlock spell that you can cast once without using a spell slot. Additional Arcanum are gained at higher levels."
+    },
+    {
+      "level": 20,
+      "feature_name": "Eldritch Master",
+      "description": "Regain all expended Pact Magic spell slots after entreating your patron for 1 minute. Usable once per long rest."
+    }
+  ],
+  "spellcasting": {
+    "spell_slots": [
+      {
+        "warlock_level": 1,
+        "spell_slots": 1,
+        "slot_level": 1
+      },
+      {
+        "warlock_level": 2,
+        "spell_slots": 2,
+        "slot_level": 1
+      },
+      {
+        "warlock_level": 3,
+        "spell_slots": 2,
+        "slot_level": 2
+      },
+      {
+        "warlock_level": 4,
+        "spell_slots": 2,
+        "slot_level": 2
+      },
+      {
+        "warlock_level": 5,
+        "spell_slots": 2,
+        "slot_level": 3
+      },
+      {
+        "warlock_level": 6,
+        "spell_slots": 2,
+        "slot_level": 3
+      },
+      {
+        "warlock_level": 7,
+        "spell_slots": 2,
+        "slot_level": 4
+      },
+      {
+        "warlock_level": 8,
+        "spell_slots": 2,
+        "slot_level": 4
+      },
+      {
+        "warlock_level": 9,
+        "spell_slots": 2,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 10,
+        "spell_slots": 2,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 11,
+        "spell_slots": 3,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 12,
+        "spell_slots": 3,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 13,
+        "spell_slots": 3,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 14,
+        "spell_slots": 3,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 15,
+        "spell_slots": 3,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 16,
+        "spell_slots": 3,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 17,
+        "spell_slots": 4,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 18,
+        "spell_slots": 4,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 19,
+        "spell_slots": 4,
+        "slot_level": 5
+      },
+      {
+        "warlock_level": 20,
+        "spell_slots": 4,
+        "slot_level": 5
+      }
+    ],
+    "spells": {
+      "cantrips": [
+        "Eldritch Blast",
+        "Mage Hand",
+        "Minor Illusion",
+        "Chill Touch",
+        "Prestidigitation",
+        "Thaumaturgy",
+        "Poison Spray",
+        "Blade Ward",
+        "Friends",
+        "True Strike"
+      ],
+      "level_1": [
+        "Armor of Agathys",
+        "Arms of Hadar",
+        "Charm Person",
+        "Comprehend Languages",
+        "Expeditious Retreat",
+        "Hellish Rebuke",
+        "Hex",
+        "Illusory Script",
+        "Protection from Evil and Good",
+        "Unseen Servant",
+        "Witch Bolt"
+      ],
+      "level_2": [
+        "Cloud of Daggers",
+        "Crown of Madness",
+        "Darkness",
+        "Enthrall",
+        "Hold Person",
+        "Invisibility",
+        "Mirror Image",
+        "Misty Step",
+        "Ray of Enfeeblement",
+        "Shatter",
+        "Spider Climb",
+        "Suggestion"
+      ],
+      "level_3": [
+        "Counterspell",
+        "Dispel Magic",
+        "Fear",
+        "Fly",
+        "Gaseous Form",
+        "Hunger of Hadar",
+        "Hypnotic Pattern",
+        "Magic Circle",
+        "Major Image",
+        "Remove Curse",
+        "Tongues",
+        "Vampiric Touch"
+      ],
+      "level_4": [
+        "Banishment",
+        "Blight",
+        "Dimension Door",
+        "Hallucinatory Terrain"
+      ],
+      "level_5": [
+        "Contact Other Plane",
+        "Dream",
+        "Hold Monster",
+        "Scrying"
+      ]
+    }
+  },
+  "eldritch_invocations": [
+    {
+      "name": "Agonizing Blast",
+      "prerequisite": "Eldritch Blast cantrip",
+      "description": "When you cast Eldritch Blast, add your Charisma modifier to the damage it deals on a hit."
+    },
+    {
+      "name": "Armor of Shadows",
+      "prerequisite": "None",
+      "description": "You can cast Mage Armor on yourself at will, without expending a spell slot or material components."
+    },
+    {
+      "name": "Beast Speech",
+      "prerequisite": "None",
+      "description": "You can cast Speak with Animals at will, without expending a spell slot."
+    },
+    {
+      "name": "Beguiling Influence",
+      "prerequisite": "None",
+      "description": "You gain proficiency in the Deception and Persuasion skills."
+    },
+    {
+      "name": "Book of Ancient Secrets",
+      "prerequisite": "Pact of the Tome feature",
+      "description": "You can now inscribe magical rituals in your Book of Shadows. You can choose two 1st-level spells that have the ritual tag from any class’s spell list."
+    },
+    {
+      "name": "Devil's Sight",
+      "prerequisite": "None",
+      "description": "You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+    },
+    {
+      "name": "Eldritch Sight",
+      "prerequisite": "None",
+      "description": "You can cast Detect Magic at will, without expending a spell slot."
+    },
+    {
+      "name": "Eldritch Spear",
+      "prerequisite": "Eldritch Blast cantrip",
+      "description": "When you cast Eldritch Blast, its range is 300 feet."
+    },
+    {
+      "name": "Eyes of the Rune Keeper",
+      "prerequisite": "None",
+      "description": "You can read all writing."
+    },
+    {
+      "name": "Fiendish Vigor",
+      "prerequisite": "None",
+      "description": "You can cast False Life on yourself at will as a 1st-level spell, without expending a spell slot or material components."
+    },
+        {
+      "name": "Gaze of Two Minds",
+      "prerequisite": "None",
+      "description": "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, but are blinded and deafened to your own surroundings."
+    },
+    {
+      "name": "Lifedrinker",
+      "prerequisite": "12th level, Pact of the Blade feature",
+      "description": "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum of 1)."
+    },
+    {
+      "name": "Mask of Many Faces",
+      "prerequisite": "None",
+      "description": "You can cast Disguise Self at will, without expending a spell slot."
+    },
+    {
+      "name": "Master of Myriad Forms",
+      "prerequisite": "15th level",
+      "description": "You can cast Alter Self at will, without expending a spell slot."
+    },
+    {
+      "name": "Mire the Mind",
+      "prerequisite": "5th level",
+      "description": "You can cast Slow once using a warlock spell slot. You can’t do so again until you finish a long rest."
+    },
+    {
+      "name": "Misty Visions",
+      "prerequisite": "None",
+      "description": "You can cast Silent Image at will, without expending a spell slot or material components."
+    },
+    {
+      "name": "One with Shadows",
+      "prerequisite": "5th level",
+      "description": "When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction."
+    },
+    {
+      "name": "Otherworldly Leap",
+      "prerequisite": "9th level",
+      "description": "You can cast Jump on yourself at will, without expending a spell slot or material components."
+    },
+    {
+      "name": "Repelling Blast",
+      "prerequisite": "Eldritch Blast cantrip",
+      "description": "When you hit a creature with Eldritch Blast, you can push the creature up to 10 feet away from you in a straight line."
+    },
+    {
+      "name": "Sculptor of Flesh",
+      "prerequisite": "7th level",
+      "description": "You can cast Polymorph once using a warlock spell slot. You can’t do so again until you finish a long rest."
+    },
+    {
+      "name": "Sign of Ill Omen",
+      "prerequisite": "5th level",
+      "description": "You can cast Bestow Curse once using a warlock spell slot. You can’t do so again until you finish a long rest."
+    },
+    {
+      "name": "Thief of Five Fates",
+      "prerequisite": "None",
+      "description": "You can cast Bane once using a warlock spell slot. You can’t do so again until you finish a long rest."
+    },
+    {
+      "name": "Thirsting Blade",
+      "prerequisite": "5th level, Pact of the Blade feature",
+      "description": "You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn."
+    },
+    {
+      "name": "Visions of Distant Realms",
+      "prerequisite": "15th level",
+      "description": "You can cast Arcane Eye at will, without expending a spell slot."
+    },
+    {
+      "name": "Voice of the Chain Master",
+      "prerequisite": "Pact of the Chain feature",
+      "description": "You can communicate telepathically with your familiar and perceive through your familiar’s senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar’s senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
+    },
+    {
+      "name": "Whispers of the Grave",
+      "prerequisite": "9th level",
+      "description": "You can cast Speak with Dead at will, without expending a spell slot."
+    },
+    {
+      "name": "Witch Sight",
+      "prerequisite": "15th level",
+      "description": "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight."
+    }
+  ]
+}
+
