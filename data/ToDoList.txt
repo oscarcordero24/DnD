@@ -1,0 +1,15 @@
+To Do List to complete all the data for the DnD database.
+
+Things to compete for each Race
+
+1)  Race Name
+2)  Racial Traits
+3)  Ability Score Increase
+4)  Age
+5)  Alignment
+6)  Size
+7)  Speed
+8)  Language
+9)  Subraces
+
+
