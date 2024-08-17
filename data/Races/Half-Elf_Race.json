@@ -1,0 +1,69 @@
+{
+    "race_name": "Half-Elf",
+    "race_features": [
+        {
+            "name": "Darkvision",
+            "description": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+        },
+        {
+            "name": "Fey Ancestry",
+            "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep.",
+            "value": {
+                "advantage": [
+                    {
+                        "name": "saving throw",
+                        "value": "charm"
+                    }
+                ],
+                "immunity": [
+                    {
+                        "name": "condition",
+                        "value": "sleep"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Skill Versatility",
+            "description": "You gain proficiency in two skills of your choice.",
+            "value": {
+                "proficiency": {
+                    "name": "skill",
+                    "value": ["Any", "Any"]
+                }
+            }
+        }
+    ],
+    "names": {
+        "male": ["Aelar", "Arannis", "Berrian", "Carric", "Enialis", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Theren", "Varis"],
+        "female": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thiala", "Vadania", "Valanthe", "Xanaphia"],
+        "clan": []
+    },
+    "ability_score_increase": {
+        "name": "Charisma",
+        "value": 2
+    },
+    "secondary_ability_score_increase": {
+        "name": "Two Abilities",
+        "value": 1
+    },
+    "age": {
+        "adult": 20,
+        "life_span": 180
+    },
+    "alignment": {
+        "value": "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers."
+    },
+    "size": {
+        "value": "Medium"
+    },
+    "speed": {
+        "value": 30
+    },
+    "tools": {
+        "amount": 0,
+        "tools_list": []
+    },
+    "language": ["Common", "Elvish", "One of your choice"],
+    "sub_races": []
+}

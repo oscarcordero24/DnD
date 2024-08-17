@@ -1,0 +1,835 @@
+{
+    "races": [
+        {
+            "race_name": "Dwarf",
+            "race_features": [
+                {
+                    "name": "Darkvision",
+                    "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet o f you as if it w ere bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+                },
+                {
+                    "name": "Dwarven Resilience",
+                    "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+                    "value": {
+                        "resistance": ["poison"],
+                        "advantage": [
+                            {
+                                "name": "saving throw",
+                                "value": "poison"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Dwarven Combat Training",
+                    "description": "You have proficiency with the battleaxe, handaxe, throwing hammer, and warhammer.",
+                    "value": {
+                        "proficiency": {
+                            "name": "weapon",
+                            "value": ["Battleaxe", "Handaxe", "Throwing Hammer", "Warhammer"]
+                        }
+                    }
+                },
+                {
+                    "name": "Stonecunning",
+                    "description": "Whenever you make an Intelligence (History) check related to the origin o f stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+                }
+            ],
+            "names": {
+                "male": ["Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"],
+                "female": ["Amber", "Artin", "Audhild", "Bardryn", "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Torgga", "Vistra"],
+                "clan": ["Balderk", "Battlehammer", "Brawnanvil", "Dankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln", "Torunn", "Ungart"]
+            },
+            "ability_score_increase": {
+                "name": "Constitution",
+                "value": 2
+            },
+            "age": {
+                "adult": 50,
+                "life_span": 350
+            },
+            "alignment": {
+                "value": "Most dwarves are lawful, believing firmly in the benefits o f a well-ordered society. They tend toward good as well, with a strong sense o f fair play and a belief that everyone deserves to share in the benefits of a just order."
+            },
+            "size": {
+                "value": "Medium"
+            },
+            "speed": {
+                "value": 25
+            },
+            "tools": {
+                "amount": 1,
+                "tools_list": ["Smith’s tools", "Brewer’s supplies", "Mason’s tools"]
+            },
+            "language": ["Common", "Dwarvish", "One of your choice"],
+            "sub_races": [
+                {
+                    "name": "Hill Dwarf",
+                    "ability_score_increase": {
+                        "name": "wisdom",
+                        "value": 1
+                    },
+                    "feature": {
+                        "name": "Dwarven Toughness",
+                        "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
+                        "value": 1
+                    }
+                },
+                {
+                    "name": "Mountain Dwarf",
+                    "ability_score_increase": {
+                        "name": "Strength",
+                        "value": 2
+                    },
+                    "feature": {
+                        "name": "Dwarven Armor Training.",
+                        "description": "You have proficiency with light and medium armor.",
+                        "value": {
+                            "proficiency": [
+                                {
+                                    "name": "armor",
+                                    "value": ["light", "medium"]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+                
+        },
+        {
+            "race_name": "Elf",
+            "race_features": [
+                {
+                    "name": "Darkvision",
+                    "description": "Accustomed to twilight forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+                },
+                {
+                    "name": "Keen Senses",
+                    "description": "You have proficiency in the Perception skill.",
+                    "value": {
+                        "proficiency": {
+                            "name": "ability",
+                            "value": ["Perception"]
+                        }
+                    }
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep.",
+                    "value": {
+                        "advantage": [
+                            {
+                                "name": "saving throw",
+                                "value": "charm"
+                            }
+                        ],
+                        "immunity": [
+                            {
+                                "name": "condition",
+                                "value": "sleep"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Trance",
+                    "description": "Elves don’t need to sleep. Instead, they meditate deeply for 4 hours a day."
+                }
+            ],
+            "names": {
+                "male": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis"],
+                "female": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thiala", "Vadania", "Valanthe", "Xanaphia"],
+                "clan": ["Amakiir", "Amastacia", "Galanodel", "Holimion", "Ilphelkiir", "Liadon", "Meliamne", "Naïlo", "Siannodel", "Xiloscient"]
+            },
+            "ability_score_increase": {
+                "name": "Dexterity",
+                "value": 2
+            },
+            "age": {
+                "adult": 100,
+                "life_span": 750
+            },
+            "alignment": {
+                "value": "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not."
+            },
+            "size": {
+                "value": "Medium"
+            },
+            "speed": {
+                "value": 30
+            },
+            "tools": {
+                "amount": 0,
+                "tools_list": []
+            },
+            "language": ["Common", "Elvish", "One of your choice"],
+            "sub_races": [
+                {
+                    "name": "High Elf",
+                    "ability_score_increase": {
+                        "name": "Intelligence",
+                        "value": 1
+                    },
+                    "proficiency": {
+                        "name": "weapon",
+                        "value": ["Longsword", "Shortsword", "Shortbow", "Longbow"]
+                    },
+                    "feature": {
+                        "name": "Cantrip",
+                        "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.",
+                        "value": {
+                            "spell_cast_ability": "intelligence"
+                        }
+                    }
+                },
+                {
+                    "name": "Wood Elf",
+                    "ability_score_increase": {
+                        "name": "Wisdom",
+                        "value": 1
+                    },
+                    "proficiency": {
+                        "name": "weapon",
+                        "value": ["Longsword", "Shortsword", "Shortbow", "Longbow"]
+                    },
+                    "feature": {
+                        "name": "Mask of the Wild",
+                        "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+                    }
+                },
+                {
+                    "name": "Dark Elf (Drow)",
+                    "ability_score_increase": {
+                        "name": "Charisma",
+                        "value": 1
+                    },
+                    "proficiency": {
+                        "name": "weapon",
+                        "value": ["Longsword", "Shortsword", "Shortbow", "Longbow"]
+                    },
+                    "feature": [
+                        {
+                            "name": "Mask of the Wild",
+                            "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+                        },
+                        {
+                            "name": "Superior Darkvision",
+                            "description": "Your darkvision has a radius o f 120 feet."
+                        },
+                        {
+                            "name": "Sunlight Sensitivity",
+                            "description": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target o f your attack, or whatever you are trying to perceive is in direct sunlight.",
+                            "value": {
+                                "disadvantage": [
+                                    {
+                                        "name": "skill",
+                                        "value": "perception"
+                                    },
+                                    {
+                                        "name": "roll",
+                                        "value": "attack"
+                                    }
+                                ],
+                                "condition": {
+                                    "value": "direct sunlight"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "race_name": "Halfling",
+            "race_features": [
+                {
+                    "name": "Lucky",
+                    "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+                },
+                {
+                    "name": "Brave",
+                    "description": "You have advantage on saving throws against being frightened.",
+                    "value": {
+                        "advantage": [
+                                {
+                                    "name": "saving throw",
+                                    "value": "frightened"
+                                }
+                        ]
+                    }
+                },
+                {
+                    "name": "Halfling Nimbleness",
+                    "description": "You can move through the space of any creature that is of a size larger than yours."
+                },
+                {
+                    "name": "Naturally Stealthy",
+                    "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+                }
+            ],
+            "names": {
+                "male": ["Alton", "Ander", "Cade", "Corrin", "Eldon", "Errich", "Finnan", "Garret", "Lindal", "Lyle", "Merric", "Milo", "Osborn", "Perrin", "Reed", "Roscoe", "Wellby"],
+                "female": ["Andry", "Bree", "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela", "Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna"],
+                "clan": ["Brushgather", "Goodbarrel", "Greenbottle", "High-hill", "Hilltopple", "Leagallow", "Tealeaf", "Thorngage", "Tosscobble", "Underbough"]
+            },
+            "ability_score_increase": {
+                "name": "Dexterity",
+                "value": 2
+            },
+            "age": {
+                "adult": 20,
+                "life_span": 150
+            },
+            "alignment": {
+                "value": "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression."
+            },
+            "size": {
+                "value": "Small"
+            },
+            "speed": {
+                "value": 25
+            },
+            "tools": {
+                "amount": 0,
+                "tools_list": []
+            },
+            "language": ["Common", "Halfling"],
+            "sub_races": [
+                {
+                    "name": "Lightfoot Halfling",
+                    "ability_score_increase": {
+                        "name": "Charisma",
+                        "value": 1
+                    },
+                    "feature": {
+                        "name": "Naturally Stealthy",
+                        "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+                    }
+                },
+                {
+                    "name": "Stout Halfling",
+                    "ability_score_increase": {
+                        "name": "Constitution",
+                        "value": 1
+                    },
+                    "feature": {
+                        "name": "Stout Resilience",
+                        "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+                        "value": {
+                            "resistance": ["poison"],
+                            "advantage": [
+                                {
+                                    "name": "saving throw",
+                                    "value": "poison"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "race_name": "Human",
+            "race_features": [
+                {
+                    "name": "Versatile",
+                    "description": "Humans are known for their adaptability and versatility. They can excel in a variety of roles and are quick to learn new skills."
+                },
+                {
+                    "name": "Skilled",
+                    "description": "You gain proficiency in one skill of your choice.",
+                    "value": {
+                        "proficiency": {
+                            "name": "skill",
+                            "value": ["Any"]
+                        }
+                    }
+                }
+            ],
+            "names": {
+                "male": ["Aldo", "Benedict", "Charles", "David", "Edward", "Frederick", "George", "Henry", "Isaac", "Jack", "Liam", "Michael", "Nicholas", "Oliver", "Peter", "Quentin", "Robert", "Samuel", "Thomas", "Victor", "William"],
+                "female": ["Alice", "Beatrice", "Catherine", "Diana", "Eleanor", "Fiona", "Grace", "Hannah", "Isabella", "Jane", "Katherine", "Lydia", "Margaret", "Natalie", "Olivia", "Penelope", "Rebecca", "Sarah", "Theresa", "Victoria", "Winifred"],
+                "clan": ["Armstrong", "Bennett", "Clark", "Davies", "Evans", "Foster", "Graham", "Hughes", "Ingram", "Jones", "Knight", "Lewis", "Mitchell", "Nelson", "Owen", "Parker", "Quinn", "Roberts", "Smith", "Taylor", "Walker"]
+            },
+            "ability_score_increase": {
+                "name": "All",
+                "value": 1
+            },
+            "age": {
+                "adult": 18,
+                "life_span": 80
+            },
+            "alignment": {
+                "value": "Humans tend to be varied in alignment, reflecting the diversity of their culture and outlook. They can be found across the entire spectrum of morality and lawfulness."
+            },
+            "size": {
+                "value": "Medium"
+            },
+            "speed": {
+                "value": 30
+            },
+            "tools": {
+                "amount": 0,
+                "tools_list": []
+            },
+            "language": ["Common", "One of your choice"],
+            "sub_races": [
+                {
+                    "name": "Variant Human",
+                    "ability_score_increase": {
+                        "name": "Two Abilities",
+                        "value": 1
+                    },
+                    "feature": {
+                        "name": "Skills and Feats",
+                        "description": "You gain proficiency in one skill of your choice and one feat of your choice.",
+                        "value": {
+                            "proficiency": {
+                                "name": "skill",
+                                "value": ["Any"]
+                            },
+                            "feat": "One of your choice"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "race_name": "Dragonborn",
+            "race_features": [
+                {
+                    "name": "Draconic Ancestry",
+                    "description": "You have draconic ancestry, which determines the type of dragon you are descended from. This ancestry grants you a breath weapon and resistance to a type of damage.",
+                    "value": [
+                        {
+                            "ancestry": "Black",
+                            "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                            "resistance": "Acid",
+                            "saving_throw": "Dexterity"
+                        },
+                        {
+                            "ancestry": "Blue",
+                            "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                            "resistance": "Lightning",
+                            "saving_throw": "Dexterity"
+                        },
+                        {
+                            "ancestry": "Brass",
+                            "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                            "resistance": "Fire",
+                            "saving_throw": "Dexterity"
+                        },
+                        {
+                            "ancestry": "Bronze",
+                            "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                            "resistance": "Lightning",
+                            "saving_throw": "Dexterity"
+                        },
+                        {
+                            "ancestry": "Copper",
+                            "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                            "resistance": "Acid",
+                            "saving_throw": "Dexterity"
+                        },
+                        {
+                            "ancestry": "Gold",
+                            "breath_weapon": "15 ft. cone (Dex. save)",
+                            "resistance": "Fire",
+                            "saving_throw": "Dexterity"
+                        },
+                        {
+                            "ancestry": "Green",
+                            "breath_weapon": "15 ft. cone (Con. save)",
+                            "resistance": "Poison",
+                            "saving_throw": "Constitution"
+                        },
+                        {
+                            "ancestry": "Red",
+                            "breath_weapon": "15 ft. cone (Dex. save)",
+                            "resistance": "Fire",
+                            "saving_throw": "Dexterity"
+                        },
+                        {
+                            "ancestry": "Silver",
+                            "breath_weapon": "15 ft. cone (Con. save)",
+                            "resistance": "Cold",
+                            "saving_throw": "Constitution"
+                        },
+                        {
+                            "ancestry": "White",
+                            "breath_weapon": "15 ft. cone (Con. save)",
+                            "resistance": "Cold",
+                            "saving_throw": "Constitution"
+                        }
+                    ]
+                },
+                {
+                    "name": "Breath Weapon",
+                    "description": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+                    "value": {
+                        "damage": [
+                            {
+                                "level": 1,
+                                "dice_amount": 2,
+                                "dice_faces": 6
+                            },
+                            {
+                                "level": 6,
+                                "dice_amount": 3,
+                                "dice_faces": 6
+                            },
+                            {
+                                "level": 11,
+                                "dice_amount": 4,
+                                "dice_faces": 6
+                            },
+                            {
+                                "level": 16,
+                                "dice_amount": 5,
+                                "dice_faces": 6
+                            }
+                        ],
+                        "saving_throw_dc": {
+                            "value": "8 + Con. Mod + proficiency bonus"
+                        }
+                    }
+                },
+                {
+                    "name": "Damage Resistance",
+                    "description": "You have resistance to the damage type associated with your draconic ancestry."
+                }
+            ],
+            "names": {
+                "male": ["Arjhan", "Balasar", "Bharash", "Donaar", "Ghesh", "Heskan", "Kriv", "Medrash", "Nadarr", "Pandjed", "Patrin", "Rhogar", "Shamash", "Shedinn", "Tarhun", "Torinn"],
+                "female": ["Akra", "Biri", "Daar", "Farideh", "Harann", "Havilar", "Jheri", "Kava", "Korinn", "Mishann", "Nala", "Perra", "Raiann", "Sora", "Surina", "Thava", "Uadjit"],
+                "clan": ["Clethtinthiallor", "Daardendrian", "Delmirev", "Drachedandion", "Fenkenkabradon", "Kepeshkmolik", "Kerrhylon", "Kimbatuul", "Linxakasendalor", "Myastan", "Nemmonis", "Norixius", "Ophinshtalajiir", "Prexijandilin", "Shestendeliath", "Turnuroth", "Verthisathurgiesh", "Yarjerit"]
+            },
+            "ability_score_increase": {
+                "name": "Strength",
+                "value": 2
+            },
+            "secondary_ability_score_increase": {
+                "name": "Charisma",
+                "value": 1
+            },
+            "age": {
+                "adult": 15,
+                "life_span": 80
+            },
+            "alignment": {
+                "value": "Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil."
+            },
+            "size": {
+                "value": "Medium"
+            },
+            "speed": {
+                "value": 30
+            },
+            "tools": {
+                "amount": 0,
+                "tools_list": []
+            },
+            "language": ["Common", "Draconic"],
+            "sub_races": []
+        },
+        {
+            "race_name": "Gnome",
+            "race_features": [
+                {
+                    "name": "Darkvision",
+                    "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+                },
+                {
+                    "name": "Gnome Cunning",
+                    "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
+                    "value": {
+                        "advantage": [
+                            {
+                                "name": "saving throw",
+                                "value": "Intelligence"
+                            },
+                            {
+                                "name": "saving throw",
+                                "value": "Wisdom"
+                            },
+                            {
+                                "name": "saving throw",
+                                "value": "Charisma"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "names": {
+                "male": ["Alston", "Alvyn", "Boddynock", "Brocc", "Burgell", "Dimble", "Eldon", "Erky", "Fonkin", "Frug", "Gerbo", "Gimble", "Glim", "Jebeddo", "Kellen", "Namfoodle", "Orryn", "Roondar", "Seebo", "Sindri", "Warryn", "Wrenn", "Zook"],
+                "female": ["Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella", "Ellyjobell", "Ellywick", "Lilli", "Loopmottin", "Lorilla", "Mardnab", "Nissa", "Nyx", "Oda", "Orla", "Roywyn", "Shamil", "Tana", "Waywocket", "Zanna"],
+                "clan": ["Beren", "Daergel", "Folkor", "Garrick", "Nackle", "Murnig", "Ningel", "Raulnor", "Scheppen", "Timbers", "Turen"]
+            },
+            "ability_score_increase": {
+                "name": "Intelligence",
+                "value": 2
+            },
+            "age": {
+                "adult": 40,
+                "life_span": 350
+            },
+            "alignment": {
+                "value": "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers."
+            },
+            "size": {
+                "value": "Small"
+            },
+            "speed": {
+                "value": 25
+            },
+            "tools": {
+                "amount": 0,
+                "tools_list": []
+            },
+            "language": ["Common", "Gnomish"],
+            "sub_races": [
+                {
+                    "name": "Forest Gnome",
+                    "ability_score_increase": {
+                        "name": "Dexterity",
+                        "value": 1
+                    },
+                    "feature": {
+                        "name": "Natural Illusionist",
+                        "description": "You know the Minor Illusion cantrip. Intelligence is your spellcasting ability for it."
+                    }
+                },
+                {
+                    "name": "Rock Gnome",
+                    "ability_score_increase": {
+                        "name": "Constitution",
+                        "value": 1
+                    },
+                    "feature": [
+                        {
+                            "name": "Artificer's Lore",
+                            "description": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+                        },
+                        {
+                            "name": "Tinker",
+                            "description": "You have proficiency with artisan’s tools (tinker’s tools). Using those tools, you can spend 1 hour and 10 gp worth o f materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.",
+                            "tools": {
+                                "amount": 1,
+                                "tools_list": ["Tinker’s tools"]
+                            },
+                            "device": [
+                                {
+                                    "name": "Clockwork Toy",
+                                    "description": "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each o f your turns in a random direction. It makes noises as appropriate to the creature it represents."
+                                },
+                                {
+                                    "name": "Fire Starter",
+                                    "description": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
+                                },
+                                {
+                                    "name": "Music Box",
+                                    "description": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "race_name": "Half-Elf",
+            "race_features": [
+                {
+                    "name": "Darkvision",
+                    "description": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep.",
+                    "value": {
+                        "advantage": [
+                            {
+                                "name": "saving throw",
+                                "value": "charm"
+                            }
+                        ],
+                        "immunity": [
+                            {
+                                "name": "condition",
+                                "value": "sleep"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Skill Versatility",
+                    "description": "You gain proficiency in two skills of your choice.",
+                    "value": {
+                        "proficiency": {
+                            "name": "skill",
+                            "value": ["Any", "Any"]
+                        }
+                    }
+                }
+            ],
+            "names": {
+                "male": ["Aelar", "Arannis", "Berrian", "Carric", "Enialis", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Theren", "Varis"],
+                "female": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thiala", "Vadania", "Valanthe", "Xanaphia"],
+                "clan": []
+            },
+            "ability_score_increase": {
+                "name": "Charisma",
+                "value": 2
+            },
+            "secondary_ability_score_increase": {
+                "name": "Two Abilities",
+                "value": 1
+            },
+            "age": {
+                "adult": 20,
+                "life_span": 180
+            },
+            "alignment": {
+                "value": "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers."
+            },
+            "size": {
+                "value": "Medium"
+            },
+            "speed": {
+                "value": 30
+            },
+            "tools": {
+                "amount": 0,
+                "tools_list": []
+            },
+            "language": ["Common", "Elvish", "One of your choice"],
+            "sub_races": []
+        },
+        {
+            "race_name": "Half-Orc",
+            "race_features": [
+                {
+                    "name": "Darkvision",
+                    "description": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+                },
+                {
+                    "name": "Menacing",
+                    "description": "You gain proficiency in the Intimidation skill.",
+                    "value": {
+                        "proficiency": {
+                            "name": "skill",
+                            "value": ["Intimidation"]
+                        }
+                    }
+                },
+                {
+                    "name": "Relentless Endurance",
+                    "description": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest."
+                },
+                {
+                    "name": "Savage Attacks",
+                    "description": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+                }
+            ],
+            "names": {
+                "male": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront", "Shump", "Thokk"],
+                "female": ["Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka", "Shautha", "Sutha", "Vola", "Volen", "Yevelda"],
+                "clan": []
+            },
+            "ability_score_increase": {
+                "name": "Strength",
+                "value": 2
+            },
+            "secondary_ability_score_increase": {
+                "name": "Constitution",
+                "value": 1
+            },
+            "age": {
+                "adult": 14,
+                "life_span": 75
+            },
+            "alignment": {
+                "value": "Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. They tend toward chaotic neutral or chaotic evil alignments."
+            },
+            "size": {
+                "value": "Medium"
+            },
+            "speed": {
+                "value": 30
+            },
+            "tools": {
+                "amount": 0,
+                "tools_list": []
+            },
+            "language": ["Common", "Orc"],
+            "sub_races": []
+        },
+        {
+            "race_name": "Tiefling",
+            "race_features": [
+                {
+                    "name": "Darkvision",
+                    "description": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+                },
+                {
+                    "name": "Hellish Resistance",
+                    "description": "You have resistance to fire damage.",
+                    "value": {
+                        "resistance": "fire"
+                    }
+                },
+                {
+                    "name": "Infernal Legacy",
+                    "description": "You know the Thaumaturgy cantrip. At 3rd level, you can cast Hellish Rebuke as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. At 5th level, you can cast Darkness once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.",
+                    "value": [
+                        {
+                            "level": 1,
+                            "cantrip": ["Thaumaturgy"]
+                        },
+                        {
+                            "level": 3,
+                            "spells": ["Hellish Rebuke"]
+                        },
+                        {
+                            "level": 5,
+                            "spells": ["Darkness"]
+                        }
+                    ]
+                }
+            ],
+            "names": {
+                "male": ["Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon", "Leucis", "Melech", "Mordai", "Morthos", "Pelaios", "Skamos", "Therai"],
+                "female": ["Akta", "Anakis", "Bryseis", "Criella", "Damaia", "Ea", "Kallista", "Lerissa", "Makaria", "Nemeia", "Orianna", "Phelaia", "Rieta"],
+                "clan": []
+            },
+            "ability_score_increase": {
+                "name": "Charisma",
+                "value": 2
+            },
+            "secondary_ability_score_increase": {
+                "name": "Intelligence",
+                "value": 1
+            },
+            "age": {
+                "adult": 18,
+                "life_span": 90
+            },
+            "alignment": {
+                "value": "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment."
+            },
+            "size": {
+                "value": "Medium"
+            },
+            "speed": {
+                "value": 30
+            },
+            "tools": {
+                "amount": 0,
+                "tools_list": []
+            },
+            "language": ["Common", "Infernal"],
+            "sub_races": []
+        }                                     
+    ]
+}

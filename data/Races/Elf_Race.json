@@ -1,0 +1,143 @@
+{
+    "race_name": "Elf",
+    "race_features": [
+        {
+            "name": "Darkvision",
+            "description": "Accustomed to twilight forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+        },
+        {
+            "name": "Keen Senses",
+            "description": "You have proficiency in the Perception skill.",
+            "value": {
+                "proficiency": {
+                    "name": "ability",
+                    "value": ["Perception"]
+                }
+            }
+        },
+        {
+            "name": "Fey Ancestry",
+            "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep.",
+            "value": {
+                "advantage": [
+                    {
+                        "name": "saving throw",
+                        "value": "charm"
+                    }
+                ],
+                "immunity": [
+                    {
+                        "name": "condition",
+                        "value": "sleep"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Trance",
+            "description": "Elves don’t need to sleep. Instead, they meditate deeply for 4 hours a day."
+        }
+    ],
+    "names": {
+        "male": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis"],
+        "female": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thiala", "Vadania", "Valanthe", "Xanaphia"],
+        "clan": ["Amakiir", "Amastacia", "Galanodel", "Holimion", "Ilphelkiir", "Liadon", "Meliamne", "Naïlo", "Siannodel", "Xiloscient"]
+    },
+    "ability_score_increase": {
+        "name": "Dexterity",
+        "value": 2
+    },
+    "age": {
+        "adult": 100,
+        "life_span": 750
+    },
+    "alignment": {
+        "value": "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not."
+    },
+    "size": {
+        "value": "Medium"
+    },
+    "speed": {
+        "value": 30
+    },
+    "tools": {
+        "amount": 0,
+        "tools_list": []
+    },
+    "language": ["Common", "Elvish", "One of your choice"],
+    "sub_races": [
+        {
+            "name": "High Elf",
+            "ability_score_increase": {
+                "name": "Intelligence",
+                "value": 1
+            },
+            "proficiency": {
+                "name": "weapon",
+                "value": ["Longsword", "Shortsword", "Shortbow", "Longbow"]
+            },
+            "feature": {
+                "name": "Cantrip",
+                "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.",
+                "value": {
+                    "spell_cast_ability": "intelligence"
+                }
+            }
+        },
+        {
+            "name": "Wood Elf",
+            "ability_score_increase": {
+                "name": "Wisdom",
+                "value": 1
+            },
+            "proficiency": {
+                "name": "weapon",
+                "value": ["Longsword", "Shortsword", "Shortbow", "Longbow"]
+            },
+            "feature": {
+                "name": "Mask of the Wild",
+                "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+            }
+        },
+        {
+            "name": "Dark Elf (Drow)",
+            "ability_score_increase": {
+                "name": "Charisma",
+                "value": 1
+            },
+            "proficiency": {
+                "name": "weapon",
+                "value": ["Longsword", "Shortsword", "Shortbow", "Longbow"]
+            },
+            "feature": [
+                {
+                    "name": "Mask of the Wild",
+                    "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+                },
+                {
+                    "name": "Superior Darkvision",
+                    "description": "Your darkvision has a radius o f 120 feet."
+                },
+                {
+                    "name": "Sunlight Sensitivity",
+                    "description": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target o f your attack, or whatever you are trying to perceive is in direct sunlight.",
+                    "value": {
+                        "disadvantage": [
+                            {
+                                "name": "skill",
+                                "value": "perception"
+                            },
+                            {
+                                "name": "roll",
+                                "value": "attack"
+                            }
+                        ],
+                        "condition": {
+                            "value": "direct sunlight"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "race_name": "Halfling",
+    "race_features": [
+        {
+            "name": "Lucky",
+            "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+        },
+        {
+            "name": "Brave",
+            "description": "You have advantage on saving throws against being frightened.",
+            "value": {
+                "advantage": [
+                        {
+                            "name": "saving throw",
+                            "value": "frightened"
+                        }
+                ]
+            }
+        },
+        {
+            "name": "Halfling Nimbleness",
+            "description": "You can move through the space of any creature that is of a size larger than yours."
+        },
+        {
+            "name": "Naturally Stealthy",
+            "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+        }
+    ],
+    "names": {
+        "male": ["Alton", "Ander", "Cade", "Corrin", "Eldon", "Errich", "Finnan", "Garret", "Lindal", "Lyle", "Merric", "Milo", "Osborn", "Perrin", "Reed", "Roscoe", "Wellby"],
+        "female": ["Andry", "Bree", "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela", "Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna"],
+        "clan": ["Brushgather", "Goodbarrel", "Greenbottle", "High-hill", "Hilltopple", "Leagallow", "Tealeaf", "Thorngage", "Tosscobble", "Underbough"]
+    },
+    "ability_score_increase": {
+        "name": "Dexterity",
+        "value": 2
+    },
+    "age": {
+        "adult": 20,
+        "life_span": 150
+    },
+    "alignment": {
+        "value": "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression."
+    },
+    "size": {
+        "value": "Small"
+    },
+    "speed": {
+        "value": 25
+    },
+    "tools": {
+        "amount": 0,
+        "tools_list": []
+    },
+    "language": ["Common", "Halfling"],
+    "sub_races": [
+        {
+            "name": "Lightfoot Halfling",
+            "ability_score_increase": {
+                "name": "Charisma",
+                "value": 1
+            },
+            "feature": {
+                "name": "Naturally Stealthy",
+                "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+            }
+        },
+        {
+            "name": "Stout Halfling",
+            "ability_score_increase": {
+                "name": "Constitution",
+                "value": 1
+            },
+            "feature": {
+                "name": "Stout Resilience",
+                "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+                "value": {
+                    "resistance": ["poison"],
+                    "advantage": [
+                        {
+                            "name": "saving throw",
+                            "value": "poison"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

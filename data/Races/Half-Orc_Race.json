@@ -1,0 +1,59 @@
+{
+    "race_name": "Half-Orc",
+    "race_features": [
+        {
+            "name": "Darkvision",
+            "description": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+        },
+        {
+            "name": "Menacing",
+            "description": "You gain proficiency in the Intimidation skill.",
+            "value": {
+                "proficiency": {
+                    "name": "skill",
+                    "value": ["Intimidation"]
+                }
+            }
+        },
+        {
+            "name": "Relentless Endurance",
+            "description": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest."
+        },
+        {
+            "name": "Savage Attacks",
+            "description": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+        }
+    ],
+    "names": {
+        "male": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront", "Shump", "Thokk"],
+        "female": ["Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka", "Shautha", "Sutha", "Vola", "Volen", "Yevelda"],
+        "clan": []
+    },
+    "ability_score_increase": {
+        "name": "Strength",
+        "value": 2
+    },
+    "secondary_ability_score_increase": {
+        "name": "Constitution",
+        "value": 1
+    },
+    "age": {
+        "adult": 14,
+        "life_span": 75
+    },
+    "alignment": {
+        "value": "Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. They tend toward chaotic neutral or chaotic evil alignments."
+    },
+    "size": {
+        "value": "Medium"
+    },
+    "speed": {
+        "value": 30
+    },
+    "tools": {
+        "amount": 0,
+        "tools_list": []
+    },
+    "language": ["Common", "Orc"],
+    "sub_races": []
+}

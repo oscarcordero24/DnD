@@ -1,0 +1,138 @@
+{
+    "race_name": "Dragonborn",
+    "race_features": [
+        {
+            "name": "Draconic Ancestry",
+            "description": "You have draconic ancestry, which determines the type of dragon you are descended from. This ancestry grants you a breath weapon and resistance to a type of damage.",
+            "value": [
+                {
+                    "ancestry": "Black",
+                    "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                    "resistance": "Acid",
+                    "saving_throw": "Dexterity"
+                },
+                {
+                    "ancestry": "Blue",
+                    "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                    "resistance": "Lightning",
+                    "saving_throw": "Dexterity"
+                },
+                {
+                    "ancestry": "Brass",
+                    "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                    "resistance": "Fire",
+                    "saving_throw": "Dexterity"
+                },
+                {
+                    "ancestry": "Bronze",
+                    "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                    "resistance": "Lightning",
+                    "saving_throw": "Dexterity"
+                },
+                {
+                    "ancestry": "Copper",
+                    "breath_weapon": "5 by 30 ft. line (Dex. save)",
+                    "resistance": "Acid",
+                    "saving_throw": "Dexterity"
+                },
+                {
+                    "ancestry": "Gold",
+                    "breath_weapon": "15 ft. cone (Dex. save)",
+                    "resistance": "Fire",
+                    "saving_throw": "Dexterity"
+                },
+                {
+                    "ancestry": "Green",
+                    "breath_weapon": "15 ft. cone (Con. save)",
+                    "resistance": "Poison",
+                    "saving_throw": "Constitution"
+                },
+                {
+                    "ancestry": "Red",
+                    "breath_weapon": "15 ft. cone (Dex. save)",
+                    "resistance": "Fire",
+                    "saving_throw": "Dexterity"
+                },
+                {
+                    "ancestry": "Silver",
+                    "breath_weapon": "15 ft. cone (Con. save)",
+                    "resistance": "Cold",
+                    "saving_throw": "Constitution"
+                },
+                {
+                    "ancestry": "White",
+                    "breath_weapon": "15 ft. cone (Con. save)",
+                    "resistance": "Cold",
+                    "saving_throw": "Constitution"
+                }
+            ]
+        },
+        {
+            "name": "Breath Weapon",
+            "description": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+            "value": {
+                "damage": [
+                    {
+                        "level": 1,
+                        "dice_amount": 2,
+                        "dice_faces": 6
+                    },
+                    {
+                        "level": 6,
+                        "dice_amount": 3,
+                        "dice_faces": 6
+                    },
+                    {
+                        "level": 11,
+                        "dice_amount": 4,
+                        "dice_faces": 6
+                    },
+                    {
+                        "level": 16,
+                        "dice_amount": 5,
+                        "dice_faces": 6
+                    }
+                ],
+                "saving_throw_dc": {
+                    "value": "8 + Con. Mod + proficiency bonus"
+                }
+            }
+        },
+        {
+            "name": "Damage Resistance",
+            "description": "You have resistance to the damage type associated with your draconic ancestry."
+        }
+    ],
+    "names": {
+        "male": ["Arjhan", "Balasar", "Bharash", "Donaar", "Ghesh", "Heskan", "Kriv", "Medrash", "Nadarr", "Pandjed", "Patrin", "Rhogar", "Shamash", "Shedinn", "Tarhun", "Torinn"],
+        "female": ["Akra", "Biri", "Daar", "Farideh", "Harann", "Havilar", "Jheri", "Kava", "Korinn", "Mishann", "Nala", "Perra", "Raiann", "Sora", "Surina", "Thava", "Uadjit"],
+        "clan": ["Clethtinthiallor", "Daardendrian", "Delmirev", "Drachedandion", "Fenkenkabradon", "Kepeshkmolik", "Kerrhylon", "Kimbatuul", "Linxakasendalor", "Myastan", "Nemmonis", "Norixius", "Ophinshtalajiir", "Prexijandilin", "Shestendeliath", "Turnuroth", "Verthisathurgiesh", "Yarjerit"]
+    },
+    "ability_score_increase": {
+        "name": "Strength",
+        "value": 2
+    },
+    "secondary_ability_score_increase": {
+        "name": "Charisma",
+        "value": 1
+    },
+    "age": {
+        "adult": 15,
+        "life_span": 80
+    },
+    "alignment": {
+        "value": "Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil."
+    },
+    "size": {
+        "value": "Medium"
+    },
+    "speed": {
+        "value": 30
+    },
+    "tools": {
+        "amount": 0,
+        "tools_list": []
+    },
+    "language": ["Common", "Draconic"],
+    "sub_races": []
+}

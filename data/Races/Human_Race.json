@@ -1,0 +1,66 @@
+{
+    "race_name": "Human",
+    "race_features": [
+        {
+            "name": "Versatile",
+            "description": "Humans are known for their adaptability and versatility. They can excel in a variety of roles and are quick to learn new skills."
+        },
+        {
+            "name": "Skilled",
+            "description": "You gain proficiency in one skill of your choice.",
+            "value": {
+                "proficiency": {
+                    "name": "skill",
+                    "value": ["Any"]
+                }
+            }
+        }
+    ],
+    "names": {
+        "male": ["Aldo", "Benedict", "Charles", "David", "Edward", "Frederick", "George", "Henry", "Isaac", "Jack", "Liam", "Michael", "Nicholas", "Oliver", "Peter", "Quentin", "Robert", "Samuel", "Thomas", "Victor", "William"],
+        "female": ["Alice", "Beatrice", "Catherine", "Diana", "Eleanor", "Fiona", "Grace", "Hannah", "Isabella", "Jane", "Katherine", "Lydia", "Margaret", "Natalie", "Olivia", "Penelope", "Rebecca", "Sarah", "Theresa", "Victoria", "Winifred"],
+        "clan": ["Armstrong", "Bennett", "Clark", "Davies", "Evans", "Foster", "Graham", "Hughes", "Ingram", "Jones", "Knight", "Lewis", "Mitchell", "Nelson", "Owen", "Parker", "Quinn", "Roberts", "Smith", "Taylor", "Walker"]
+    },
+    "ability_score_increase": {
+        "name": "All",
+        "value": 1
+    },
+    "age": {
+        "adult": 18,
+        "life_span": 80
+    },
+    "alignment": {
+        "value": "Humans tend to be varied in alignment, reflecting the diversity of their culture and outlook. They can be found across the entire spectrum of morality and lawfulness."
+    },
+    "size": {
+        "value": "Medium"
+    },
+    "speed": {
+        "value": 30
+    },
+    "tools": {
+        "amount": 0,
+        "tools_list": []
+    },
+    "language": ["Common", "One of your choice"],
+    "sub_races": [
+        {
+            "name": "Variant Human",
+            "ability_score_increase": {
+                "name": "Two Abilities",
+                "value": 1
+            },
+            "feature": {
+                "name": "Skills and Feats",
+                "description": "You gain proficiency in one skill of your choice and one feat of your choice.",
+                "value": {
+                    "proficiency": {
+                        "name": "skill",
+                        "value": ["Any"]
+                    },
+                    "feat": "One of your choice"
+                }
+            }
+        }
+    ]
+}

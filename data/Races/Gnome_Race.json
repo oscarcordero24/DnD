@@ -1,0 +1,104 @@
+{
+    "race_name": "Gnome",
+    "race_features": [
+        {
+            "name": "Darkvision",
+            "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+        },
+        {
+            "name": "Gnome Cunning",
+            "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
+            "value": {
+                "advantage": [
+                    {
+                        "name": "saving throw",
+                        "value": "Intelligence"
+                    },
+                    {
+                        "name": "saving throw",
+                        "value": "Wisdom"
+                    },
+                    {
+                        "name": "saving throw",
+                        "value": "Charisma"
+                    }
+                ]
+            }
+        }
+    ],
+    "names": {
+        "male": ["Alston", "Alvyn", "Boddynock", "Brocc", "Burgell", "Dimble", "Eldon", "Erky", "Fonkin", "Frug", "Gerbo", "Gimble", "Glim", "Jebeddo", "Kellen", "Namfoodle", "Orryn", "Roondar", "Seebo", "Sindri", "Warryn", "Wrenn", "Zook"],
+        "female": ["Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella", "Ellyjobell", "Ellywick", "Lilli", "Loopmottin", "Lorilla", "Mardnab", "Nissa", "Nyx", "Oda", "Orla", "Roywyn", "Shamil", "Tana", "Waywocket", "Zanna"],
+        "clan": ["Beren", "Daergel", "Folkor", "Garrick", "Nackle", "Murnig", "Ningel", "Raulnor", "Scheppen", "Timbers", "Turen"]
+    },
+    "ability_score_increase": {
+        "name": "Intelligence",
+        "value": 2
+    },
+    "age": {
+        "adult": 40,
+        "life_span": 350
+    },
+    "alignment": {
+        "value": "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers."
+    },
+    "size": {
+        "value": "Small"
+    },
+    "speed": {
+        "value": 25
+    },
+    "tools": {
+        "amount": 0,
+        "tools_list": []
+    },
+    "language": ["Common", "Gnomish"],
+    "sub_races": [
+        {
+            "name": "Forest Gnome",
+            "ability_score_increase": {
+                "name": "Dexterity",
+                "value": 1
+            },
+            "feature": {
+                "name": "Natural Illusionist",
+                "description": "You know the Minor Illusion cantrip. Intelligence is your spellcasting ability for it."
+            }
+        },
+        {
+            "name": "Rock Gnome",
+            "ability_score_increase": {
+                "name": "Constitution",
+                "value": 1
+            },
+            "feature": [
+                {
+                    "name": "Artificer's Lore",
+                    "description": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+                },
+                {
+                    "name": "Tinker",
+                    "description": "You have proficiency with artisan’s tools (tinker’s tools). Using those tools, you can spend 1 hour and 10 gp worth o f materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.",
+                    "tools": {
+                        "amount": 1,
+                        "tools_list": ["Tinker’s tools"]
+                    },
+                    "device": [
+                        {
+                            "name": "Clockwork Toy",
+                            "description": "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each o f your turns in a random direction. It makes noises as appropriate to the creature it represents."
+                        },
+                        {
+                            "name": "Fire Starter",
+                            "description": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
+                        },
+                        {
+                            "name": "Music Box",
+                            "description": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
