@@ -1,0 +1,132 @@
+
+:root{
+    font-size: 12px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bfbfbf;
+}
+
+.container{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "letter"
+    "input"
+    "button";
+}
+
+.letter-box{
+    grid-area: letter;
+    border: 1px solid black;
+    background: #fff;
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.card{
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.input{
+    grid-area: input;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 2rem;
+}
+
+.input.hidden{
+    display: none;
+}
+
+#input-txtb{
+    font-size: 2rem;
+    width: 50rem;
+    height: 3rem;
+}
+
+#my-button{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+.input-string{
+    padding: 2rem;
+    width: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-string span{
+    font-size: 2rem;
+}
+
+.symbol-keyboard{
+    grid-area: input;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "A B C D E F G delete"
+    "H I J K L M N delete" 
+    "O P Q R S T U translate" 
+    "V W X Y Z . _ translate";
+    padding: 2rem;
+    border: 1px solid red;
+    align-items: center;
+    justify-items: center;
+}
+
+.symbol-keyboard .card{
+    cursor: pointer;
+}
+
+#translate-sym{
+    grid-area: translate;
+    width: 15rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+#delete-sym{
+    grid-area: delete;
+    width: 15rem;
+    height: 3rem;
+    font-size: 2rem;
+}
