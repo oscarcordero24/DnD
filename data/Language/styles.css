@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 :root{
     font-size: 12px;
@@ -20,8 +23,7 @@ body{
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "letter"
-    "input"
-    "button";
+    "input";
 }
 
 .letter-box{
@@ -84,6 +86,14 @@ img{
     font-size: 2rem;
 }
 
+#elvish-common{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .input-string{
     padding: 2rem;
     width: 100rem;
@@ -97,8 +107,21 @@ img{
     font-size: 2rem;
 }
 
-.symbol-keyboard{
+.symbol.hidden{
+    display: none;
+}
+
+.symbol{
     grid-area: input;
+    display: grid;
+    grid-template-columns: 100rem 1fr;
+    grid-template-areas: 
+    "keyboard string";
+}
+
+.keyboard{
+    grid-area: keyboard;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -107,26 +130,48 @@ img{
     "H I J K L M N delete" 
     "O P Q R S T U translate" 
     "V W X Y Z . _ translate";
-    padding: 2rem;
-    border: 1px solid red;
     align-items: center;
     justify-items: center;
 }
 
-.symbol-keyboard .card{
+.symbol .card{
     cursor: pointer;
 }
 
 #translate-sym{
     grid-area: translate;
-    width: 15rem;
+    width: 10rem;
     height: 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #delete-sym{
     grid-area: delete;
-    width: 15rem;
+    width: 10rem;
     height: 3rem;
+    font-size: 1.5rem;
+}
+
+.result-string{
+    grid-area: string;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.result-string span{
     font-size: 2rem;
+}
+
+#common-elvish{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
 }

@@ -1,0 +1,33 @@
+Ability Score Increase
+"ability_score_increase": {
+        "name": "Any",
+        "amount_increase": 1
+}
+
+Advantage
+"advantage": {
+    "category": "value",
+    "name": "value",
+    "other": "against/none"
+}
+
+Proficiency
+"proficiency": {
+    "category": "value"
+}
+
+Conditions
+"condition": {
+    "name": "value",
+    "target": "self/enemy/ally",
+    "status": "resistance/gain/remove",
+    "after_effect": null,
+    "other": value
+}
+
+Effects
+"effect": {
+    "name": "value",
+    "conditional": "Y/N",
+    "other": "value"
+}

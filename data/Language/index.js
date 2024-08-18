@@ -3,6 +3,12 @@ const letterBox = document.querySelector('.container .letter-box');
 const myButton = document.getElementById('my-button');
 const myTextBox = document.getElementById('input-txtb');
 const inputString = document.querySelector('.input-string span');
+const symLetterList = document.querySelectorAll('.symbol .keyboard .card');
+const symButton = document.getElementById('translate-sym');
+const deleteButton = document.getElementById('delete-sym');
+const symTranslateResult = document.querySelector('.result-string span');
+const elvishToCommon = document.getElementById('elvish-common');
+const commonToElvish = document.getElementById('common-elvish');
 const letterMap = {
     "a": "Letter_A.png",
     "b": "Letter_B.png",
@@ -34,6 +40,16 @@ const letterMap = {
     ".": "Letter_Period.png"
 }
 
+elvishToCommon.addEventListener('click', function(){
+    document.querySelector('.container .input').classList.add('hidden');
+    document.querySelector('.container .symbol').classList.remove('hidden');
+});
+
+commonToElvish.addEventListener('click', function(){
+    document.querySelector('.container .input').classList.remove('hidden');
+    document.querySelector('.container .symbol').classList.add('hidden');
+});
+
 myButton.addEventListener('click', function() {
     letterBox.innerHTML = '';
     let sentence = myTextBox.value.split('');
@@ -45,15 +61,46 @@ myButton.addEventListener('click', function() {
     });
     inputString.textContent = myTextBox.value;
     myTextBox.value = '';
-})
+});
+
+symLetterList.forEach(sym => {
+    sym.addEventListener('click', function(){
+        let letterPath = sym.childNodes[1].getAttribute('src');
+        addWordToTextBox(letterPath);
+    })
+});
+
+deleteButton.addEventListener('click', function(){
+    if (letterBox.childNodes.length != 1){
+        letterBox.removeChild(letterBox.lastChild);
+    }
+});
+
+symButton.addEventListener('click', function(){
+    translateSymbol();
+});
 
 function translateLetter(letter){
     return letterMap[letter.toLowerCase()];
-}
+};
+
+function translateSymbol(){
+    let outputString = '';
+    for (let i = 1; i < letterBox.childNodes.length; i++){
+        let letterPath = letterBox.childNodes[i].firstChild.getAttribute('src').split('/')[1];
+
+        for (let key in letterMap){
+            if (letterPath == letterMap[key]){
+                outputString += key;
+            }
+        }
+    }
+    symTranslateResult.textContent = outputString;
+};
 
 function createImagePath(imageName){
     return "Elvish/" + imageName; 
-}
+};
 
 function addWordToTextBox(imagePath){
 
@@ -65,7 +112,7 @@ function addWordToTextBox(imagePath){
 
     newCard.appendChild(newImage);
     letterBox.appendChild(newCard);
-}
+};
 
 function checkWordAmount(){
     let divWidth = letterBox.offsetWidth;
@@ -77,4 +124,4 @@ function checkWordAmount(){
     /* letterBox.childNodes.forEach(element => {
         console.log(element.firstChild.getAttribute('src'));
     }); */
-}
+};
