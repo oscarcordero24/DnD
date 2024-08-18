@@ -1,0 +1,737 @@
+{
+    "class_name": "Cleric",
+    "hit_dice": "1d8",
+    "hit_point_level_1": "8 + Constitution Mod",
+    "hit_point_higher_level": "1d8 (or 5) + Constitution Mod after level 1",
+    "proficiency": {
+        "armor": ["light", "medium", "shield"],
+        "weapon": ["simple"],
+        "tools": []
+    },
+    "ability_score_increase": [
+        {
+            "name": "Any",
+            "amount_increase": 1
+        },
+        {
+            "name": "Any",
+            "amount_increase": 1
+        }
+    ],
+    "tools": {
+        "amount": 0,
+        "tools_list": []
+    },
+    "class_saving_throw": {
+        "ability": ["Wisdom", "Charisma"]
+    },
+    "skill_proficiency": {
+        "amount": 2,
+        "option": ["History", "Insight", "Medicine", "Persuasion", "Religion"]
+    },
+    "equipment": [
+        "Mace or warhammer (if proficient)",
+        "Scale mail, leather armor, or chain mail (if proficient)",
+        "Light crossbow and 20 bolts or any simple weapon",
+        "Priest’s pack or explorer’s pack",
+        "Shield and holy symbol"
+    ],
+    "class_table": [
+        {
+            "level": 1,
+            "proficiency_bonus": 2,
+            "feature": "Spellcasting, Divine Domain",
+            "cantrips_known": 3,
+            "spells_known": 0,
+            "spell_slots_level_1": 2
+        },
+        {
+            "level": 2,
+            "proficiency_bonus": 2,
+            "feature": "Channel Divinity (1/rest), Divine Domain feature",
+            "cantrips_known": 3,
+            "spells_known": 0,
+            "spell_slots_level_1": 3
+        },
+        {
+            "level": 3,
+            "proficiency_bonus": 2,
+            "feature": "—",
+            "cantrips_known": 3,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 2
+        },
+        {
+            "level": 4,
+            "proficiency_bonus": 2,
+            "feature": "Ability Score Improvement",
+            "cantrips_known": 4,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3
+        },
+        {
+            "level": 5,
+            "proficiency_bonus": 3,
+            "feature": "Destroy Undead (CR 1/2)",
+            "cantrips_known": 4,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 2
+        },
+        {
+            "level": 6,
+            "proficiency_bonus": 3,
+            "feature": "Channel Divinity (2/rest), Divine Domain feature",
+            "cantrips_known": 4,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3
+        },
+        {
+            "level": 7,
+            "proficiency_bonus": 3,
+            "feature": "—",
+            "cantrips_known": 4,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 1
+        },
+        {
+            "level": 8,
+            "proficiency_bonus": 3,
+            "feature": "Ability Score Improvement, Destroy Undead (CR 1)",
+            "cantrips_known": 4,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 2
+        },
+        {
+            "level": 9,
+            "proficiency_bonus": 4,
+            "feature": "—",
+            "cantrips_known": 4,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 1
+        },
+        {
+            "level": 10,
+            "proficiency_bonus": 4,
+            "feature": "Divine Intervention",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 2
+        },
+        {
+            "level": 11,
+            "proficiency_bonus": 4,
+            "feature": "Destroy Undead (CR 2)",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 2,
+            "spell_slots_level_6": 1
+        },
+        {
+            "level": 12,
+            "proficiency_bonus": 4,
+            "feature": "Ability Score Improvement",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 2,
+            "spell_slots_level_6": 1
+        },
+        {
+            "level": 13,
+            "proficiency_bonus": 5,
+            "feature": "—",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 2,
+            "spell_slots_level_6": 1,
+            "spell_slots_level_7": 1
+        },
+        {
+            "level": 14,
+            "proficiency_bonus": 5,
+            "feature": "Destroy Undead (CR 3)",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 2,
+            "spell_slots_level_6": 1,
+            "spell_slots_level_7": 1
+        },
+        {
+            "level": 15,
+            "proficiency_bonus": 5,
+            "feature": "—",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 2,
+            "spell_slots_level_6": 1,
+            "spell_slots_level_7": 1,
+            "spell_slots_level_8": 1
+        },
+        {
+            "level": 16,
+            "proficiency_bonus": 5,
+            "feature": "Ability Score Improvement",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 2,
+            "spell_slots_level_6": 1,
+            "spell_slots_level_7": 1,
+            "spell_slots_level_8": 1
+        },
+        {
+            "level": 17,
+            "proficiency_bonus": 6,
+            "feature": "Destroy Undead (CR 4)",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 2,
+            "spell_slots_level_6": 1,
+            "spell_slots_level_7": 1,
+            "spell_slots_level_8": 1,
+            "spell_slots_level_9": 1
+        },
+        {
+            "level": 18,
+            "proficiency_bonus": 6,
+            "feature": "Channel Divinity (3/rest), Divine Domain feature",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 3,
+            "spell_slots_level_6": 1,
+            "spell_slots_level_7": 1,
+            "spell_slots_level_8": 1,
+            "spell_slots_level_9": 1
+        },
+        {
+            "level": 19,
+            "proficiency_bonus": 6,
+            "feature": "—",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 3,
+            "spell_slots_level_6": 2,
+            "spell_slots_level_7": 1,
+            "spell_slots_level_8": 1,
+            "spell_slots_level_9": 1
+        },
+        {
+            "level": 20,
+            "proficiency_bonus": 6,
+            "feature": "Divine Intervention Improvement",
+            "cantrips_known": 5,
+            "spells_known": 0,
+            "spell_slots_level_1": 4,
+            "spell_slots_level_2": 3,
+            "spell_slots_level_3": 3,
+            "spell_slots_level_4": 3,
+            "spell_slots_level_5": 3,
+            "spell_slots_level_6": 2,
+            "spell_slots_level_7": 2,
+            "spell_slots_level_8": 1,
+            "spell_slots_level_9": 1
+        }
+    ],
+    "spellcasting_ability": "Wisdom",
+    "features": [
+        {
+            "name": "Spellcasting",
+            "description": [
+                "As a conduit for divine power, you can cast cleric spells."
+            ],
+            "level": 1
+        },
+        {
+            "name": "Divine Domain",
+            "description": [
+                "Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Each domain grants special features at 1st, 2nd, 6th, 8th, and 17th levels."
+            ],
+            "level": 1,
+            "domains": ["Knowledge", "Life", "Light", "Nature", "Tempest", "Trickery", "War"]
+        },
+        {
+            "name": "Channel Divinity",
+            "description": [
+                "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects."
+            ],
+            "level": 2
+        },
+        {
+            "name": "Channel Divinity: Turn Undead",
+            "description": [
+                "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet o f you must make a W isdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
+                "A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet o f you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+            ],
+            "level": 2
+        },
+        {
+            "name": "Destroy Undead",
+            "description": [
+                "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold."
+            ],
+            "level": 5,
+            "threshold": [
+                {"level": 5, "cr": 0.5},
+                {"level": 8, "cr": 1},
+                {"level": 11, "cr": 2},
+                {"level": 14, "cr": 3},
+                {"level": 17, "cr": 4}
+            ]
+        },
+        {
+            "name": "Divine Intervention",
+            "description": [
+                "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great."
+            ],
+            "level": 10
+        },
+        {
+            "name": "Divine Intervention Improvement",
+            "description": [
+                "At 20th level, your call for intervention succeeds automatically, no roll required."
+            ],
+            "level": 20
+        }
+    ],
+    "extra_feature": [
+        {
+            "name": "Knowledge Domain",
+            "description": [
+                "The Knowledge domain involves the pursuit of knowledge and understanding, often through divine guidance."
+            ],
+            "feature": [
+                {
+                    "name": "Blessings of Knowledge",
+                    "description": [
+                        "At 1st level, you learn two languages of your choice and gain proficiency with two of the following skills: Arcana, History, Nature, or Religion."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Channel Divinity: Knowledge of the Ages",
+                    "description": [
+                        "Starting at 2nd level, you can use your Channel Divinity to gain proficiency in any skill or tool for 10 minutes."
+                    ],
+                    "level": 2
+                },
+                {
+                    "name": "Channel Divinity: Read Thoughts",
+                    "description": [
+                        "Starting at 6th level, you can use your Channel Divinity to read the thoughts of others."
+                    ],
+                    "level": 6
+                },
+                {
+                    "name": "Potent Spellcasting",
+                    "description": [
+                        "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+                    ],
+                    "level": 8
+                },
+                {
+                    "name": "Visions of the Past",
+                    "description": [
+                        "Starting at 17th level, you can call upon your deity to receive a vision of past events."
+                    ],
+                    "level": 17
+                }
+            ],
+            "spells": {
+                "level_1": ["Command", "Identify"],
+                "level_3": ["Augury", "Suggestion"],
+                "level_5": ["Nondetection", "Speak with Dead"],
+                "level_7": ["Arcane Eye", "Confusion"],
+                "level_9": ["Legend Lore", "Scrying"]
+            }
+        },
+        {
+            "name": "Life Domain",
+            "description": [
+                "The Life domain is focused on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life."
+            ],
+            "feature": [
+                {
+                    "name": "Bonus Proficiency",
+                    "description": [
+                        "When you choose this domain at 1st level, you gain proficiency with heavy armor."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Disciple of Life",
+                    "description": [
+                        "Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Channel Divinity: Preserve Life",
+                    "description": [
+                        "Starting at 2nd level, you can use your Channel Divinity to heal the badly injured. As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level."
+                    ],
+                    "level": 2
+                },
+                {
+                    "name": "Blessed Healer",
+                    "description": [
+                        "Beginning at 6th level, the healing spells you cast on others heal you as well."
+                    ],
+                    "level": 6
+                },
+                {
+                    "name": "Divine Strike",
+                    "description": [
+                        "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target."
+                    ],
+                    "level": 8
+                },
+                {
+                    "name": "Supreme Healing",
+                    "description": [
+                        "Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die."
+                    ],
+                    "level": 17
+                }
+            ],
+            "spells": {
+                "level_1": ["Bless", "Cure Wounds"],
+                "level_3": ["Lesser Restoration", "Spiritual Weapon"],
+                "level_5": ["Beacon of Hope", "Revivify"],
+                "level_7": ["Death Ward", "Guardian of Faith"],
+                "level_9": ["Mass Cure Wounds", "Raise Dead"]
+            }
+        },
+        {
+            "name": "Light Domain",
+            "description": [
+                "The Light domain is focused on the twin blessings of light and fire, offering protection and illumination to the followers of the cleric."
+            ],
+            "feature": [
+                {
+                    "name": "Bonus Cantrip",
+                    "description": [
+                        "When you choose this domain at 1st level, you gain the Light cantrip if you don’t already know it."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Warding Flare",
+                    "description": [
+                        "Also at 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature that can be blinded within 30 feet, you can use your reaction to impose disadvantage on the attack roll."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Channel Divinity: Radiance of the Dawn",
+                    "description": [
+                        "Starting at 2nd level, you can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes."
+                    ],
+                    "level": 2
+                },
+                {
+                    "name": "Improved Flare",
+                    "description": [
+                        "At 6th level, you can use your Warding Flare feature when a creature that you can see within 30 feet of you attacks a creature other than you."
+                    ],
+                    "level": 6
+                },
+                {
+                    "name": "Potent Spellcasting",
+                    "description": [
+                        "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+                    ],
+                    "level": 8
+                },
+                {
+                    "name": "Corona of Light",
+                    "description": [
+                        "Starting at 17th level, you can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it. You emit bright light in a 60-foot radius and dim light 30 feet beyond that."
+                    ],
+                    "level": 17
+                }
+            ],
+            "spells": {
+                "level_1": ["Burning Hands", "Faerie Fire"],
+                "level_3": ["Flaming Sphere", "Scorching Ray"],
+                "level_5": ["Daylight", "Fireball"],
+                "level_7": ["Guardian of Faith", "Wall of Fire"],
+                "level_9": ["Flame Strike", "Scrying"]
+            }
+        },
+        {
+            "name": "Nature Domain",
+            "description": [
+                "The Nature domain is devoted to the divine powers that sustain life, nurturing the natural world and the spirits that dwell within it."
+            ],
+            "feature": [
+                {
+                    "name": "Acolyte of Nature",
+                    "description": [
+                        "At 1st level, you learn one druid cantrip of your choice. You also gain proficiency in one of the following skills of your choice: Animal Handling, Nature, or Survival."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Bonus Proficiency",
+                    "description": [
+                        "Also at 1st level, you gain proficiency with heavy armor."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Channel Divinity: Charm Animals and Plants",
+                    "description": [
+                        "Starting at 2nd level, you can use your Channel Divinity to charm animals and plants."
+                    ],
+                    "level": 2
+                },
+                {
+                    "name": "Dampen Elements",
+                    "description": [
+                        "Starting at 6th level, when you or a creature within 30 feet of you takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to the creature against that instance of the damage."
+                    ],
+                    "level": 6
+                },
+                {
+                    "name": "Divine Strike",
+                    "description": [
+                        "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or lightning damage to the target."
+                    ],
+                    "level": 8
+                },
+                {
+                    "name": "Master of Nature",
+                    "description": [
+                        "At 17th level, you can use your action to command animals or plants that you have charmed using your Channel Divinity."
+                    ],
+                    "level": 17
+                }
+            ],
+            "spells": {
+                "level_1": ["Animal Friendship", "Speak with Animals"],
+                "level_3": ["Barkskin", "Spike Growth"],
+                "level_5": ["Plant Growth", "Wind Wall"],
+                "level_7": ["Dominate Beast", "Grasping Vine"],
+                "level_9": ["Insect Plague", "Tree Stride"]
+            }
+        },
+        {
+            "name": "Tempest Domain",
+            "description": [
+                "The Tempest domain calls on the power of the storm, with deities who grant this domain embodying tempestuous aspects of nature."
+            ],
+            "feature": [
+                {
+                    "name": "Bonus Proficiencies",
+                    "description": [
+                        "At 1st level, you gain proficiency with martial weapons and heavy armor."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Wrath of the Storm",
+                    "description": [
+                        "Also at 1st level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Channel Divinity: Destructive Wrath",
+                    "description": [
+                        "Starting at 2nd level, you can use your Channel Divinity to wield the power of the storm with unchecked ferocity."
+                    ],
+                    "level": 2
+                },
+                {
+                    "name": "Thunderbolt Strike",
+                    "description": [
+                        "At 6th level, when you deal lightning damage to a Large or smaller creature, you can also push it up to 10 feet away from you."
+                    ],
+                    "level": 6
+                },
+                {
+                    "name": "Divine Strike",
+                    "description": [
+                        "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target."
+                    ],
+                    "level": 8
+                },
+                {
+                    "name": "Stormborn",
+                    "description": [
+                        "At 17th level, you have a flying speed equal to your walking speed whenever you are not underground or indoors."
+                    ],
+                    "level": 17
+                }
+            ],
+            "spells": {
+                "level_1": ["Fog Cloud", "Thunderwave"],
+                "level_3": ["Gust of Wind", "Shatter"],
+                "level_5": ["Call Lightning", "Sleet Storm"],
+                "level_7": ["Control Water", "Ice Storm"],
+                "level_9": ["Destructive Wave", "Insect Plague"]
+            }
+        },
+        {
+            "name": "Trickery Domain",
+            "description": [
+                "The Trickery domain is for clerics of mischief and deception, worshipping gods of trickery and illusion."
+            ],
+            "feature": [
+                {
+                    "name": "Blessing of the Trickster",
+                    "description": [
+                        "At 1st level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Channel Divinity: Invoke Duplicity",
+                    "description": [
+                        "Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself."
+                    ],
+                    "level": 2
+                },
+                {
+                    "name": "Channel Divinity: Cloak of Shadows",
+                    "description": [
+                        "Starting at 6th level, you can use your Channel Divinity to become invisible."
+                    ],
+                    "level": 6
+                },
+                {
+                    "name": "Divine Strike",
+                    "description": [
+                        "At 8th level, you gain the ability to infuse your weapon strikes with poison. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target."
+                    ],
+                    "level": 8
+                },
+                {
+                    "name": "Improved Duplicity",
+                    "description": [
+                        "At 17th level, you can create up to four duplicates of yourself when you use Invoke Duplicity."
+                    ],
+                    "level": 17
+                }
+            ],
+            "spells": {
+                "level_1": ["Charm Person", "Disguise Self"],
+                "level_3": ["Mirror Image", "Pass without Trace"],
+                "level_5": ["Blink", "Dispel Magic"],
+                "level_7": ["Dimension Door", "Polymorph"],
+                "level_9": ["Dominate Person", "Modify Memory"]
+            }
+        },
+        {
+            "name": "War Domain",
+            "description": [
+                "The War domain emphasizes the cleric's martial abilities and worships gods of battle and conquest."
+            ],
+            "feature": [
+                {
+                    "name": "Bonus Proficiencies",
+                    "description": [
+                        "At 1st level, you gain proficiency with martial weapons and heavy armor."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "War Priest",
+                    "description": [
+                        "From 1st level, when you use the Attack action, you can make one weapon attack as a bonus action a number of times equal to your Wisdom modifier (minimum of 1). You regain all expended uses when you finish a long rest."
+                    ],
+                    "level": 1
+                },
+                {
+                    "name": "Channel Divinity: Guided Strike",
+                    "description": [
+                        "Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll."
+                    ],
+                    "level": 2
+                },
+                {
+                    "name": "Channel Divinity: War God's Blessing",
+                    "description": [
+                        "Starting at 6th level, when a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity."
+                    ],
+                    "level": 6
+                },
+                {
+                    "name": "Divine Strike",
+                    "description": [
+                        "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon."
+                    ],
+                    "level": 8
+                },
+                {
+                    "name": "Avatar of Battle",
+                    "description": [
+                        "Starting at 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons."
+                    ],
+                    "level": 17
+                }
+            ],
+            "spells": {
+                "level_1": ["Divine Favor", "Shield of Faith"],
+                "level_3": ["Magic Weapon", "Spiritual Weapon"],
+                "level_5": ["Crusader's Mantle", "Spirit Guardians"],
+                "level_7": ["Freedom of Movement", "Stoneskin"],
+                "level_9": ["Flame Strike", "Hold Monster"]
+            }
+        }
+    ] 
+}
